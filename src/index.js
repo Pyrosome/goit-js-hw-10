@@ -11,7 +11,7 @@ input.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
 function onSearch() {
   cleanMarkup();
-  inputValue = input.value.trim();
+  const inputValue = input.value.trim();
 
   if (inputValue) {
     fetchCountries(inputValue)
